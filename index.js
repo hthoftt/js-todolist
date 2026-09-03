@@ -46,6 +46,7 @@ clear.addEventListener('click',(e)=>{
 // tab
 const tab = document.querySelector('.tab');
 tab.addEventListener('click',(e)=>{
+    if (e.target.nodeName !== 'LI') return;
     let all = document.querySelectorAll('.tab li');
     all.forEach((item)=>{
         item.setAttribute('class','');
@@ -63,7 +64,6 @@ function render(){
     }else{
         cardList.style.display='none';
     }
-    // console.log(data);
     let count = 0;
     let str = '';
     data.forEach((item,index)=>{

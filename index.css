@@ -94,6 +94,8 @@ input[type=text]::placeholder {
 .tab {
   display: flex;
   text-align: center;
+  justify-content: center;
+  padding: 5px 0;
   color: #9f9a91;
   font-size: 14px;
   cursor: pointer;
@@ -111,15 +113,11 @@ input[type=text]::placeholder {
 }
 
 .cart_content {
-  padding: 0.5rem 1rem 1rem 1rem;
-}
-@media (max-width: 575px) {
-  .cart_content {
-    padding: 0.5rem 1rem 0.5rem 0.5rem;
-  }
+  padding: 0rem 1rem 0rem 0rem;
 }
 
 .list li {
+  list-style: none;
   position: relative;
   padding-right: 2rem;
 }
@@ -157,7 +155,8 @@ input[type=text]::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 2rem 1rem 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0rem 1rem 0rem 2rem;
   font-size: 14px;
 }
 .list_footer a {
